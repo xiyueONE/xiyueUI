@@ -101,4 +101,5 @@ Telegram Support
 Twitter
 
 
+© 2022 Aurora Labs / Privacy
 
