@@ -45,3 +45,26 @@ Operational
 Weekly Alpha Leaks
 At Aurora, we have an ethos of relentless and transparent execution. In that regard, you’ll find below the links to our weekly live-streamed Alpha Leak session, and associated update posts.
 
+
+Tune in to our Alpha Leak every Friday at 9am EST on YouTube.
+
+Watch now
+Going live in 0 days, 21 hours, 39 minutes.
+Past updates:
+Dec 03, 2021
+Nov 19, 2021
+Oct 22, 2021
+Oct 08, 2021
+Oct 01, 2021
+Sep 24, 2021
+Sep 17, 2021
+Sep 03, 2021
+All updates
+Get Aurora updates and news delivered to your inbox.
+
+Your email address
+Subscribe now
+
+
+
+
