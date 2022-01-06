@@ -20,7 +20,6 @@ Typical Cost ~$ 0.00
 Many leading projects are already collaborating with Aurora, exploring the next steps for unlocking these exciting benefits!
 
 
-
 Many leading projects are already collaborating with Aurora, exploring the next steps for unlocking these exciting benefits!
 
 1inch
