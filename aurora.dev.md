@@ -42,3 +42,6 @@ Operational
 Price Oracle
 Operational
 
+Weekly Alpha Leaks
+At Aurora, we have an ethos of relentless and transparent execution. In that regard, you’ll find below the links to our weekly live-streamed Alpha Leak session, and associated update posts.
+
