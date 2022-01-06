@@ -20,4 +20,5 @@ Features, Features, Features
 $ six
 Trustless Bridging
 
-
+# seven
+Base currency is ETH
