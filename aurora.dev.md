@@ -73,4 +73,32 @@ Read the docs
 Find us on GitHub
 Get support in Discord
 
+Subscribe to our newsletter
+The latest news, articles, and resources, sent to your inbox.
+Your email
+COMPANY
+About
+DAO
+Team
+Careers
+Contact
+DEVELOPERS
+Documentation
+Block Explorer
+Testnet Bridge
+GitHub
+Telegram Dev
+RESOURCES
+Bridge
+Official Token List
+News & Blog
+Weekly Updates
+Press Kit
+STAY IN TOUCH
+Discord
+Telegram Official
+Telegram Support
+Twitter
+
+
 
