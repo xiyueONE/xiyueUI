@@ -30,3 +30,15 @@ imToken
 
 Our network is currently in limited availability as we work towards general availability. Depending on your app demands, you may already deploy on Aurora.
 
+
+Bridge
+Operational
+Block Explorer
+Operational
+Data Index
+Operational
+AMM Exchange
+Operational
+Price Oracle
+Operational
+
