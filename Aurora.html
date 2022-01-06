@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en" class="antialiased">
+    <head>
+        <script>
+            (function() {
+                var defaultEnabled = window.matchMedia("(prefers-color-scheme: light)").matches;
+                var enabled = localStorage.getItem("dark-mode") || defaultEnabled;
+                window.document.documentElement.classList.add(enabled === "true" ? "dark" : "light");
+            }
+            )();
+        </script>
+        <link rel="preload" href="/static/fonts/hellix/Hellix-Regular.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/static/fonts/hellix/Hellix-Medium.woff2" as="font" crossorigin=""/>
+        <link rel="preload" href="/static/fonts/hellix/Hellix-Bold.woff2" as="font" crossorigin=""/>
+        <script>
+            (function(w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0]
+                  , j = d.createElement(s)
+                  , dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            }
+            )(window, document, 'script', 'dataLayer', 'GTM-NV3Z4R6');
+        </script>
+        <script type="text/javascript" src="https://sa.aurora.dev/latest.js" async=""></script>
+        <script type="text/javascript">
+            !function(e, t, n) {
+                function a() {
+                    var e = t.getElementsByTagName("script")[0]
+                      , n = t.createElement("script");
+                    n.type = "text/javascript",
+                    n.async = !0,
+                    n.src = "https://beacon-v2.helpscout.net",
+                    e.parentNode.insertBefore(n, e)
+                }
+                if (e.Beacon = n = function(t, n, a) {
+                    e.Beacon.readyQueue.push({
+                        method: t,
+                        options: n,
+                        data: a
+                    })
+                }
+                ,
+                n.readyQueue = [],
+                "complete" === t.readyState)
+                    return a();
+                e.attachEvent ? e.attachEvent("onload", a) : e.addEventListener("load", a, !1)
+            }(window, document, window.Beacon || function() {}
+            );
+        </script>
+        <script type="text/javascript">
+            window.Beacon('init', 'b2167668-bea9-47fb-8dce-26b261312194')
+        </script>
+        <script type="text/javascript">
+            window.OFID = "61b359b29b31a0416b4f6f0a";
+            (function() {
+                var script = document.createElement('script');
+                var url = 'https://cdn.outfunnel.com/c.js?v=' + new Date().toISOString().substring(0, 10);
+                script.setAttribute('src', url);
+                document.getElementsByTagName('head')[0].appendChild(script);
+            }
+            )();
+        </script>
+        <meta name="viewport" content="width=device-width"/>
+        <meta charSet="utf-8"/>
+        <meta name="description" content="Develop on our Ethereum-compatible network with increased scaling and lower transactions costs."/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:site" content="@auroraisnear"/>
+        <meta name="twitter:creator" content="@auroraisnear"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:description" content="Develop on our Ethereum-compatible network with increased scaling and lower transactions costs."/>
+        <meta property="og:image:alt" content="Aurora is Ethereum Layer-2 built on top of NEAR Protocol."/>
+        <meta property="og:image:width" content="1200"/>
+        <meta property="og:image:height" content="675"/>
+        <meta property="og:site_name" content="Aurora"/>
+        <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png"/>
+        <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png"/>
+        <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png"/>
+        <link rel="icon" href="/static/favicon.svg" type="image/svg+xml"/>
+        <link rel="manifest" href="/static/site.webmanifest"/>
+        <title>Aurora - Breathe new life into your apps.</title>
+        <meta name="robots" content="index,follow"/>
+        <meta name="googlebot" content="index,follow"/>
+        <meta property="og:url" content="https://aurora.dev/"/>
+        <meta property="og:title" content="Breathe new life into your apps."/>
+        <meta property="og:image" content="https://og-image-alexbndk-auroraisnear.vercel.app/Breathe%20new%20life%20into%20your%20apps..png?subtitle="/>
+        <meta name="next-head-count" content="23"/>
+        <link rel="preload" href="/_next/static/css/f24c60176fbfd37f.css" as="style"/>
+        <link rel="stylesheet" href="/_next/static/css/f24c60176fbfd37f.css" data-n-g=""/>
+        <noscript data-n-css=""></noscript>
+        <script defer="" nomodule="" src="/_next/static/chunks/polyfills-5cd94c89d3acac5f.js"></script>
+        <script src="/_next/static/chunks/webpack-646b9042f5c5c74e.js" defer=""></script>
+        <script src="/_next/static/chunks/framework-4975f770e34de116.js" defer=""></script>
+        <script src="/_next/static/chunks/main-92e9dee980687429.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/_app-7ab349ecd47db08b.js" defer=""></script>
+        <script src="/_next/static/chunks/fb7d5399-abfd4729f1c0f77b.js" defer=""></script>
+        <script src="/_next/static/chunks/13-96eba905bffbd116.js" defer=""></script>
+        <script src="/_next/static/chunks/202-30fdab60c7c08aab.js" defer=""></script>
+        <script src="/_next/static/chunks/513-5b1396148a8e3a47.js" defer=""></script>
+        <script src="/_next/static/chunks/676-0177562a957e96ef.js" defer=""></script>
+        <script src="/_next/static/chunks/pages/index-27b76a7e6f6d3b6b.js" defer=""></script>
+        <script src="/_next/static/fgGhyJVU7aWNd8oyqUQQC/_buildManifest.js" defer=""></script>
+        <script src="/_next/static/fgGhyJVU7aWNd8oyqUQQC/_ssgManifest.js" defer=""></script>
+        <script src="/_next/static/fgGhyJVU7aWNd8oyqUQQC/_middlewareManifest.js" defer=""></script>
+    </head>
+    <body class="bg-gray-100 dark:bg-black text-gray-900 dark:text-white">
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV3Z4R6" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <div id="__next" data-reactroot="">
+            <div class="relative flex flex-col items-center justify-center min-h-screen">
+                <header class="z-40 sticky top-0 w-full bg-gray-100 bg-opacity-90 dark:bg-black dark:bg-opacity-75 backdrop-blur-3xl">
+                    <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                        <nav class="flex items-stretch py-5">
+                            <div class="flex-1 flex space-x-6">
+                                <a class="inline-flex items-center flex-shrink-0 focus:outline-none" href="/">
+                                    <svg viewBox="0 0 135 30" class="h-7">
+                                        <path d="M96.766 7.471c1.506.385 2.147.74 3.296 1.79 2.012 1.878 2.758 4.614 2.027 7.454-.835 3.283-3.787 5.457-7.306 5.398a18.454 18.454 0 01-1.49-.089c-.731-.118-1.999-.65-2.774-1.168-3.802-2.514-4.31-8.253-1.014-11.477a7.308 7.308 0 013.683-1.982c1.372-.28 2.221-.266 3.578.074zm-31.341 0l1.223.044 1.222.045.045 4.141c.06 6.05-.194 7.395-1.685 8.874-1.088 1.065-2.058 1.435-4.026 1.494-.82.03-1.7-.015-1.968-.074-2.207-.562-3.713-2.278-4.085-4.63-.075-.517-.12-2.928-.105-5.368l.045-4.437h2.386l.074 4.954c.075 4.925.075 4.955.448 5.695 1.133 2.248 4.741 2.262 5.934.03l.402-.77.09-9.998zm-18.37.015l.299.784c.164.414.835 2.16 1.506 3.875.67 1.715 1.401 3.608 1.64 4.215.223.606.79 2.056 1.252 3.21.462 1.153.835 2.144.835 2.188 0 .045-.566.074-1.252.074-1.223 0-1.253-.015-1.402-.4-.09-.236-.984-2.543-1.968-5.146-2.296-6.034-2.281-5.99-2.475-5.99-.09 0-.224.222-.313.488-.09.251-.716 1.908-1.387 3.653-.67 1.745-1.58 4.112-2.013 5.25l-.775 2.071-1.208.045c-1.029.03-1.223 0-1.223-.193 0-.266 5.204-13.666 5.413-13.932.09-.133.611-.192 1.61-.192h1.461zm29.046 0c3.861 0 4.726.133 5.83.932.387.28.85.813 1.118 1.272.388.695.477 1.005.522 2.07.044 1.035 0 1.42-.254 2.115-.402 1.02-1.312 1.908-2.385 2.293-.418.147-.76.295-.76.34 0 .044.879 1.183 1.938 2.544 1.073 1.36 1.938 2.529 1.938 2.617 0 .222-2.117.207-2.58 0-.208-.088-1.237-1.286-2.28-2.662l-1.924-2.484-1.074-.015h-1.088v5.324h-2.386l.03-3.653.045-3.668 3.429-.074c2.475-.059 3.534-.133 3.817-.28 1.088-.548 1.536-2.264.85-3.255-.686-1.02-1.044-1.109-4.25-1.198L73.76 9.63l-.462-.458a1.788 1.788 0 01-.537-1.065l-.09-.621h3.43zm33.34.03c3.548.044 3.801.059 4.502.384 1.58.725 2.43 2.011 2.535 3.816.119 2.277-.85 3.845-2.788 4.481-.314.104-.567.252-.567.326 0 .073.85 1.212 1.879 2.529 1.028 1.316 1.908 2.484 1.953 2.603.12.295-2.475.192-2.863-.119-.149-.118-1.103-1.301-2.132-2.618l-1.849-2.41h-1.014c-.79 0-1.029.059-1.103.236-.045.133-.09 1.331-.09 2.663v2.425h-2.385v-3.46c0-1.909.044-3.565.09-3.698.074-.207.521-.237 3.324-.237 3.623 0 4.13-.118 4.801-1.05.477-.665.477-1.952.015-2.603-.611-.843-1.148-.99-4.205-1.08-2.251-.059-2.847-.118-3.16-.325-.478-.31-.91-1.213-.79-1.612.104-.296.178-.296 3.846-.252zm19.815.044l.85 2.144a400.5 400.5 0 011.327 3.328c.253.65 1.103 2.84 1.878 4.851.79 2.012 1.432 3.727 1.432 3.801 0 .089-.537.148-1.238.148h-1.222l-1.104-2.914c-2.34-6.167-3.28-8.548-3.414-8.592-.134-.045-.462.724-2.028 4.777-.268.74-.954 2.484-1.491 3.89-.537 1.39-.984 2.617-.984 2.691 0 .089-.522.148-1.267.148-.731 0-1.268-.06-1.268-.148 0-.103 3.862-10.101 5.204-13.459l.253-.665h3.072zM94.768 9.556c-3.533 0-5.844 3.299-4.756 6.819.283.931.447 1.198 1.252 1.996.76.755 1.104.976 1.894 1.228a5.17 5.17 0 003.951-.281c2.803-1.36 3.698-4.97 1.924-7.647-.925-1.39-2.386-2.115-4.265-2.115z" fill="currentColor"></path>
+                                        <path d="M15 2.292a3.317 3.317 0 012.981 1.841l9.375 18.75a3.333 3.333 0 01-2.981 4.825H5.625a3.333 3.333 0 01-2.98-4.825l9.374-18.75A3.317 3.317 0 0115 2.292M15 0a5.625 5.625 0 00-5.031 3.108L.594 21.858A5.625 5.625 0 005.625 30h18.75a5.625 5.625 0 005.03-8.142l-9.374-18.75A5.625 5.625 0 0015 0z" fill="currentColor" class="text-primary"></path>
+                                    </svg>
+                                </a>
+                                <div class="hidden md:flex md:items-center md:space-x-6 md:flex-shrink-0">
+                                    <button class="text-gray-900 dark:text-white text-opacity-60 dark:text-opacity-60 hover:text-opacity-100 dark:hover:text-opacity-100 relative flex py-0.5 items-center space-x-1 font-medium transition focus:outline-none">
+                                        About 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 -mr-1 -mb-0.5">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="text-gray-900 dark:text-white text-opacity-60 dark:text-opacity-60 hover:text-opacity-100 dark:hover:text-opacity-100 relative flex py-0.5 items-center space-x-1 font-medium transition focus:outline-none">
+                                        Ecosystem 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 -mr-1 -mb-0.5">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <button class="text-gray-900 dark:text-white text-opacity-60 dark:text-opacity-60 hover:text-opacity-100 dark:hover:text-opacity-100 relative flex py-0.5 items-center space-x-1 font-medium transition focus:outline-none">
+                                        Developers 
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 -mr-1 -mb-0.5">
+                                            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </button>
+                                    <a class="flex py-0.5 items-center space-x-1 font-medium focus:outline-none text-gray-900 dark:text-white text-opacity-60 dark:text-opacity-60 hover:text-opacity-100 dark:hover:text-opacity-100 transition" href="/faq">
+                                        <span>FAQs</span>
+                                    </a>
+                                    <a class="flex py-0.5 items-center space-x-1 font-medium focus:outline-none text-gray-900 dark:text-white text-opacity-60 dark:text-opacity-60 hover:text-opacity-100 dark:hover:text-opacity-100 transition" href="/blog">
+                                        <span>Blog</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="md:hidden flex items-center -mr-2 space-x-2">
+                                <button class="flex items-center">
+                                    <span class="bg-white dark:bg-gray-800 rounded-lg p-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+                                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                        </svg>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="hidden md:flex md:flex-1 md:items-center md:justify-end md:space-x-2 h-8">
+                                <div class="relative flex self-stretch">
+                                    <a class="relative items-center justify-center pb-0.5 white-space-nowrap whitespace-nowrap transition hover:scale-103 active:scale-95 active:transform focus:outline-none h-auto self-stretch font-semibold flex-shrink-0 inline-flex bg-black text-white dark:text-black dark:bg-white h-8 text-sm rounded-md px-3" href="/start">Get Started</a>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </header>
+                <main class="flex flex-col flex-1 w-full">
+                    <div class="py-12 md:py-20">
+                        <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                            <div class="max-w-xl relative z-10">
+                                <div class="">
+                                    <h1 class="text-6xl lg:text-7xl font-bold">Breathe new life into your apps.</h1>
+                                </div>
+                                <div class="mt-6">
+                                    <p class="text-2xl leading-normal font-semibold text-gray-900 dark:text-gray-100 text-opacity-60 dark:text-opacity-80">Aurora is an EVM built on the NEAR Protocol, delivering a turn-key solution for developers to operate their apps on an Ethereum-compatible, high-throughput, scalable and future-safe platform, with low transaction costs for their users.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-12 md:mt-12 relative w-screen z-10 flex overflow-x-auto hide-scrollbar md:max-w-5xl md:mx-auto md:px-5 dark:bg-gradient-to-b dark:from-transparent dark:to-black md:dark:bg-none">
+                            <div class="flex-none w-5"></div>
+                            <div class="md:max-w-2xl">
+                                <div class="relative">
+                                    <ul class="flex relative z-10">
+                                        <li class="min-w-40 relative flex-1 pb-5">
+                                            <div class="text-base font-bold">Average Block Time</div>
+                                            <div class="mt-2 flex">
+                                                <span class="text-4xl font-bold mr-0.5 self-center mt-2">~</span>
+                                                <span class="ml-1 text-7xl font-bold">1</span>
+                                                <span class="ml-2 text-4xl font-bold self-end">sec</span>
+                                            </div>
+                                        </li>
+                                        <li class="flex-shrink-0 w-8 relative">
+                                            <div class="absolute bottom-0 left-0 w-full h-1.5 bg-gray-100 dark:bg-black"></div>
+                                        </li>
+                                        <li class="min-w-40 relative flex-1 pb-4">
+                                            <div class="text-base font-bold">Transaction Finality</div>
+                                            <div class="mt-2 flex">
+                                                <span class="text-4xl font-bold mr-0.5 self-center mt-2">~</span>
+                                                <span class="ml-1 text-7xl font-bold">2</span>
+                                                <span class="ml-2 text-4xl font-bold self-end">sec</span>
+                                            </div>
+                                        </li>
+                                        <li class="flex-shrink-0 w-8 relative">
+                                            <div class="absolute bottom-0 left-0 w-full h-1.5 bg-gray-100 dark:bg-black"></div>
+                                        </li>
+                                        <li class="min-w-52 relative flex-1 pb-4">
+                                            <div class="text-base font-bold">Typical Cost</div>
+                                            <div class="mt-2 flex">
+                                                <span class="text-4xl font-bold mr-0.5 self-center mt-2">~</span>
+                                                <span class="ml-1 text-3xl font-bold mr-0.5 self-center mt-2">$</span>
+                                                <span class="text-7xl font-bold">0.00</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="z-0 absolute bottom-0 left-0 w-full h-1.5 bg-gradient-to-r from-primary via-accent1 to-accent2"></div>
+                                </div>
+                            </div>
+                            <div class="flex-none w-5"></div>
+                        </div>
+                        <svg width="0" height="0">
+                            <defs>
+                                <clipPath id="auroraShape" clipPathUnits="objectBoundingBox">
+                                    <path d="M0.5,0 C0.428990232,0 0.36406921,0.0401021832 0.332298914,0.103611112 L0.0198124192,0.728611112 C-0.00926527399,0.786737518 -0.0061683272,0.85577717 0.0279969092,0.91106641 C0.0621621455,0.96635565 0.122521974,1 0.187513505,1 L0.812486495,1 C0.877478026,1 0.937837854,0.96635565 0.972003091,0.91106641 C1.00616833,0.85577717 1.00926527,0.786737518 0.980187581,0.728611112 L0.667701086,0.103611112 C0.63593079,0.0401021832 0.571009768,0 0.5,0 Z"></path>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <div class="absolute inset-0 h-screen overflow-hidden">
+                            <div class="absolute top-1/2 right-0 mt-6 flex justify-end h-[85vh] transform -translate-y-1/2 translate-x-full dark:translate-x-2/3 sm:translate-x-[33%] sm:dark:translate-x-[33%]" style="width:85vh">
+                                <div class="relative w-full h-full" style="clip-path:url(#auroraShape);background-color:#210e2c">
+                                    <span style="box-sizing:border-box;display:block;overflow:hidden;width:initial;height:initial;background:none;opacity:1;border:0;margin:0;padding:0;position:absolute;top:0;left:0;bottom:0;right:0">
+                                        <img alt="" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%"/>
+                                        <noscript>
+                                            <img alt="" sizes="100vw" srcSet="/_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=640&amp;q=75 640w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=750&amp;q=75 750w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=828&amp;q=75 828w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=1080&amp;q=75 1080w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=1200&amp;q=75 1200w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=1920&amp;q=75 1920w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=2048&amp;q=75 2048w, /_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=3840&amp;q=75 3840w" src="/_next/image?url=%2Fstatic%2Faurora.jpg&amp;w=3840&amp;q=75" decoding="async" data-nimg="fill" style="position:absolute;top:0;left:0;bottom:0;right:0;box-sizing:border-box;padding:0;border:none;margin:auto;display:block;width:0;height:0;min-width:100%;max-width:100%;min-height:100%;max-height:100%" loading="lazy"/>
+                                        </noscript>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative z-10 pb-12 pt-20 md:pt-24">
+                            <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                                <div class="max-w-2xl">
+                                    <h2 class="text-4xl lg:text-5xl font-bold"></h2>
+                                    <div class="mt-4">
+                                        <p class="text-2xl leading-normal font-bold text-black dark:text-white">Many leading projects are already collaborating with Aurora, exploring the next steps for unlocking these exciting benefits!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                            <div class="grid grid-cols-2 gap-2 md:grid-cols-4">
+                                <a href="https://1inch.io" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1.2;--tw-scale-y:1.2">
+                                                <svg id="1inch_svg__prefix__logo" x="0" y="0" viewBox="0 0 706.8 665.2" xml:space="preserve" alt="1inch" class="w-full h-full text-white" title="1inch">
+                                                    <style>
+                                                        .1inch_svg__prefix__st2 {
+                                                            fill: #fff
+                                                        }
+                                                    </style>
+                                                    <path fill="#fff" d="M168.2 366.5L186.9 226 24.7 113.4l148.2 50.2 35-53.7 127.8-79.3 281.7 155.2L632 422.6 506.5 597l-99.2 15.2 51.3-93.9v-90.4l-37.3-70.6-37.9-25.1-58.3 60.1v63.6l-45.5 42.6-57.8 7-25.6 14.5-42-13.4-17.5-63 31.5-44.3v-32.8z"></path>
+                                                    <path fill="#fff" d="M427.2 112.2c-30.9-6.4-64.7-4.7-64.7-4.7s-11.1 51.3-79.9 64.8c.5 0 90.9 30.9 144.6-60.1zm28 465.5c37.3-29.2 65.3-69.4 78.2-114.9.6-1.7 5.8-4.7 9.3-7 5.8-3.5 11.7-6.4 12.8-11.1 2.3-13.4 3.5-27.4 3.5-41.4 0-5.2-5.3-10.5-10.5-15.7-4.1-3.5-8.2-7.6-8.2-10.5-5.8-53.1-30.3-102.7-69.4-138.8l-4.1 4.1c37.9 35.6 62.4 84 67.7 135.3.6 4.7 5.2 9.3 9.9 14 4.1 3.5 8.8 8.8 8.8 11.1 0 13.4-1.2 26.8-3.5 40.2-.6 2.3-5.8 4.7-9.9 7-5.8 2.9-11.1 5.8-12.2 10.5-14 49.6-46.1 92.8-88.7 120.8 7.6-16.3 31.5-69.4 44.3-96.3l-2.3-86.3-74.1-71.7-42 5.8-46.1 74.7s21.6 27.4-8.8 59.5c-29.7 31.5-53.1 38.5-53.1 38.5l-21.6-11.7c6.4-8.2 19.3-20.4 29.2-28.6 16.9-14 33.8-15.2 33.8-30.3.7-31.6-33.2-22.9-33.2-22.9l-12.3 11.7-5.2 43.2-25.6 32.1-2.9-.6-42-9.3s25.7-13.4 29.8-28.6c4.1-14.6-8.2-63-8.8-65.9.6.6 12.3 10.5 17.5 26.8 9.3-25.7 21.6-50.2 25.1-52.5 3.5-2.3 50.7-27.4 50.7-27.4l-15.7 41.4 11.7-6.4 28-68.8s27.4-13.4 47.8-13.4c36.7-.6 91-45.5 66.5-126 7 2.9 128.3 63.6 149.3 182.6 15.7 91.5-36.2 177.2-123.7 226.8z"></path>
+                                                    <path fill="#fff" d="M316.4 125c13.4-15.8 8.2-39.1 8.2-39.1l-39.1 57.8c-.6 0 13.9.6 30.9-18.7zM185.1 440.6l4.7-23.3s-19.3 33.8-21 38.5c-1.8 5.3 1.2 14.6 8.7 14 7.6-.6 16.9-11.7 16.9-19.8 0-10.5-9.3-9.4-9.3-9.4z"></path>
+                                                    <path class="1inch_svg__prefix__st2" d="M531.6 69.6s29.2 1.2 59.5 4.7c-68.3-53.7-133-69.4-185.5-69.4-72.3 0-121.3 29.8-124.3 31.5L304.1.2s-91-8.8-123.1 87.5c-8.2-20.4-15.7-50.2-15.7-50.2S118 79 140.2 147.8C85.9 128 8.4 100.5 5.4 100c-4.1-.6-5.3 1.2-5.3 1.2s-1.2 1.7 2.3 4.7c6.5 5.1 129 95.6 155.9 113.1-5.8 21-5.8 30.9 0 40.8 8.2 13.4 8.7 20.4 7.6 30.3-1.2 9.9-11.7 95.7-14 106.2-2.3 10.5-26.8 47.8-25.7 58.9 1.2 11.1 16.3 58.3 29.8 63.6 9.9 3.5 34.4 11.1 50.7 11.1 5.8 0 11.1-1.2 13.4-3.5 9.9-8.7 12.8-10.5 19.8-10.5h1.7c2.9 0 6.4.6 10.5.6 9.3 0 21.6-1.8 30.3-9.9 12.8-12.8 35-30.3 42-38.5 8.8-11.1 13.4-26.2 11.1-41.4-1.8-14 5.8-26.3 14.6-38.5 11.1-14.6 31.5-40.8 31.5-40.8C421.9 377.6 447 423.7 447 475c0 91-79.3 164.5-177.3 164.5-15.2 0-29.7-1.7-44.3-5.2 44.9 15.7 82.8 21 113.8 21 65.9 0 100.9-23.9 100.9-23.9s-12.2 15.8-32.1 33.8h.6c109.1-15.2 162.2-105 162.2-105s-4.1 29.2-9.3 49c145.1-109.1 120.6-245.6 120-250.2 1.2 1.7 15.8 19.2 23.3 28.6 23.4-240.4-173.2-318-173.2-318zM308.2 453.5c-2.3 2.9-12.2 11.7-19.2 18.1-7 6.4-14.6 12.8-20.4 18.7-2.3 2.3-7 3.5-14 3.5h-17.5c8.8-11.7 34.4-38.5 43.2-44.3 10.5-7 15.8-14 9.3-26.2-6.4-12.3-23.3-9.3-23.3-9.3s9.9-4.1 18.7-4.1c-11.1-2.9-25.1 0-31.5 6.4-7 6.4-5.8 29.2-8.7 43.7-2.9 15.2-12.8 22.8-28 36.8-8.2 7.6-14 9.9-18.7 9.9-9.9-1.7-21.6-4.7-29.8-7.6-5.8-7.6-14.6-32.7-16.9-43.2 1.7-5.8 8.7-18.1 12.2-25.1 7-13.4 11.1-21 12.3-28 2.3-9.9 9.9-71.2 12.8-96.8 7.6 9.9 18.1 26.3 15.7 36.8 16.9-23.9 4.7-47.3-1.2-56.6-5.2-9.3-12.2-28-6.4-47.8 5.8-19.8 26.8-74.7 26.8-74.7s7 12.3 16.9 9.9c9.9-2.3 89.8-122.5 89.8-122.5s21.6 47.2-1.2 81.7c-23.3 34.4-46.1 40.8-46.1 40.8s32.1 5.8 61.8-15.8c12.2 28.6 23.9 58.3 24.5 62.4-1.8 4.1-25.1 60.1-27.4 63.6-1.2 1.2-9.3 3.5-15.2 4.7-9.9 2.9-15.7 4.7-18.1 6.4-4.1 3.5-22.8 54.8-31.5 79.9-10.5 2.9-21 8.8-28.6 20.4 4.1-2.9 16.9-4.7 26.3-5.8 8.2-.6 33.2 12.8 39.7 37.9v1.2c1.3 9.2-1.6 18-6.3 25zm-54.8 7c5.3-7.6 4.7-20.4 5.3-24.5.6-4.1 1.7-11.7 6.4-12.8 4.7-1.2 15.8.6 15.8 8.7 0 7.6-8.2 9.3-14 14.6-4.2 4-12.4 12.8-13.5 14zM486.1 349c5.8-29.7 6.4-55.4 4.7-76.4 22.7 30.3 36.7 67.1 40.8 105 .6 4.7 5.2 9.3 9.9 14 4.1 3.5 8.8 8.2 8.8 11.1 0 13.4-1.2 26.8-3.5 40.3-.6 1.7-5.8 4.7-9.9 7-5.8 2.9-11.1 5.8-12.2 10.5-12.8 44.9-40.3 84.6-77 112.6 54.2-56.6 80.4-150 38.4-224.1zm-36.7 229.3c37.9-29.2 67.1-70 79.9-116.1.6-1.7 5.8-4.7 9.3-7 5.8-2.9 11.7-6.4 12.8-11.1 2.3-13.4 3.5-27.4 3.5-41.4 0-5.2-5.3-10.5-10.5-15.7-2.9-3.5-7.6-7.6-7.6-10.5-4.7-42.6-21.6-82.8-47.8-116.1-11.7-70-58.3-91.6-59.5-92.2 1.2 1.8 31.5 45.5 10.5 96.8-21.6 51.9-77 43.8-81.7 44.3-4.7 0-22.7 23.3-45.5 66.5-2.9-1.2-15.2-4.1-29.2-1.7 10.5-29.2 26.3-70.6 29.2-74.1 1.2-1.2 9.9-3.5 15.8-5.2 11.1-2.9 16.3-4.7 18.1-7 1.2-1.8 7-15.2 12.8-29.2 5.3 0 18.7-1.2 19.8-1.8 1.2-1.2 12.3-29.7 12.3-33.2 0-2.9-22.8-59.5-31.5-81.1 4.1-4.7 8.2-10.5 12.2-16.9 119.6 12.9 213 114.4 213 237.4 0 94.5-55.4 176.8-135.9 215.3z"></path>
+                                                    <path class="1inch_svg__prefix__st2" d="M294.2 263.3c11.1-12.8 5.3-36.7-15.2-40.8 5.3-12.2 12.8-36.7 12.8-36.7s-59.5 93.3-64.7 95.1c-5.3 1.8-10.5-18.7-10.5-18.7-11.1 42.6 18.7 48.4 22.2 35 16.3-4.2 44.3-21.7 55.4-33.9z"></path>
+                                                    <path d="M243.4 286l30.3-51.9s17.5 8.8 8.7 22.8c-11 16.3-39 29.1-39 29.1zM618.5 526.4c-8.8 11.7-18.7 23.9-30.3 35.6 75.2-144.7 3.5-277.1.6-282.3 5.3 5.3 10.5 11.1 15.2 16.3 57.7 64.1 64.7 160.4 14.5 230.4zm70-186.1c-26.3-70.6-63.6-130.7-145.8-184.9-79.3-52.5-164.5-48.4-169.2-47.8h-1.2c2.9-1.2 5.8-1.8 8.7-2.3 18.1-5.8 41.4-10.5 64.8-13.4C507.7 83 570.1 104 612.7 149l1.2 1.2c48.4 51.3 73.5 115.4 74.6 190.1zM524 51.5c-86.9-16.3-142.9-8.2-183.2 7-1.2-4.7-5.3-14-8.8-21.6-12.1 14.6-25 32.1-33.1 43.2-22.2 15.2-31.5 29.8-31.5 29.8 12.8-43.8 50.2-76.4 95.7-84.6 12.8-2.3 26.8-3.5 42-3.5 40.2.6 80.4 10.5 118.9 29.7zm-321.4 112c-68.2-2.3-45.5-81.7-44.3-86.3 0 .6 4.6 62.4 44.3 86.3zm67.1-142.9c-52.5 31.5-42 106.7-42 106.7-50.2-76.3 37.9-104.9 42-106.7zM183.4 184.5c3.5 2.9 7 8.2 2.9 15.8-2.3 4.1-5.8 3.5-11.1 1.2-7-3.5-49-28-86.9-53.1 43.2 15.2 86.9 31.5 93.9 35 0 0 .6.6 1.2 1.1z" fill="#fff"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">1inch</div>
+                                    </div>
+                                </a>
+                                <a href="https://dodoex.io" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg viewBox="0 0 34 26" fill="none" alt="DODO" class="w-full h-full " title="DODO">
+                                                    <g mask="url(#dodo_svg__prefix__mask1)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M20.75 6.793a4.67 4.67 0 00.709-2.126c.104-.905-.115-1.64-.629-1.86-.505-.215-1.167.123-1.734.803l.002-.136c0-1.886-.857-3.416-1.913-3.416-1.057 0-1.913 1.53-1.913 3.416 0 .134.004.266.013.396-.643-.882-1.488-1.334-2.091-1.043-.755.364-.847 1.752-.204 3.1.107.225.349.614.48.806C5.277 8.04.613 14.687.026 25.597h4.583c.483-8.982 4.657-14.055 12.198-13.899 6.924.143 12.216 4.69 12.145 13.899h4.583c.084-10.865-5.256-17.115-12.785-18.804z" fill="currentColor"></path>
+                                                    </g>
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 17c-.552 0-1 .503-1 1.122v2.756c0 .62.448 1.122 1 1.122s1-.502 1-1.122v-2.756c0-.62-.448-1.122-1-1.122zm8 0c-.552 0-1 .503-1 1.122v2.756c0 .62.448 1.122 1 1.122s1-.502 1-1.122v-2.756c0-.62-.448-1.122-1-1.122z" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">DODO</div>
+                                    </div>
+                                </a>
+                                <a href="https://chain.link" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg viewBox="0 0 37.8 43.6" alt="Chainlink" class="w-full h-full " title="Chainlink">
+                                                    <g data-name="Layer 2">
+                                                        <path d="M18.9 0l-4 2.3L4 8.6l-4 2.3v21.8L4 35l11 6.3 4 2.3 4-2.3L33.8 35l4-2.3V10.9l-4-2.3-10.9-6.3zM8 28.1V15.5l10.9-6.3 10.9 6.3v12.6l-10.9 6.3z" fill="currentColor" data-name="Layer 1"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">Chainlink</div>
+                                    </div>
+                                </a>
+                                <a href="https://snowswap.org" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg viewBox="0 0 24 24" alt="SnowSwap" class="w-full h-full " title="SnowSwap">
+                                                    <defs>
+                                                        <linearGradient x1="103.47%" y1="44.307%" x2="-4.703%" y2="55.824%" id="snowswap_svg__a">
+                                                            <stop stop-color="currentColor" offset="0%"></stop>
+                                                            <stop stop-color="currentColor" offset="100%"></stop>
+                                                        </linearGradient>
+                                                    </defs>
+                                                    <path d="M12 0c6.6 0 12 5.4 12 12s-5.4 12-12 12S0 18.6 0 12 5.4 0 12 0zm.321 4c-.283 0-.473.19-.473.473v1.608l-.756-.757a.457.457 0 00-.663 0c-.189.19-.189.473 0 .757l.473.757c.379.378.663.946.663 1.514a1.51 1.51 0 01-.757 1.324l-.095.095a1.452 1.452 0 01-1.513 0c-.473-.284-.852-.757-.946-1.23L7.78 7.31c-.095-.284-.379-.473-.663-.378-.189.094-.378.378-.283.662l.283 1.04-1.324-.756c-.284-.19-.568-.095-.757.189-.094.189 0 .567.19.662l1.324.757-1.04.284c-.285.094-.474.378-.38.662.095.19.285.378.474.378.094 0 0 0 1.324-.378a1.907 1.907 0 011.608.19c.473.283.757.756.757 1.323v.19a1.51 1.51 0 01-.757 1.324 1.907 1.907 0 01-1.608.19l-1.135-.19c-.284-.095-.568.095-.568.378-.094.284.095.568.379.663l1.04.283-1.324.757c-.473.284-.284.946.284.946.189 0 .094 0 1.608-.851l-.284 1.04c-.094.284.095.568.379.663.283.094.567-.095.567-.379l.284-1.23c.095-.567.473-.946.946-1.23a1.452 1.452 0 011.514 0l.094.095c.473.284.757.757.757 1.325 0 .567-.19 1.135-.662 1.513l-.757.757c-.19.19-.19.473 0 .757.19.19.473.19.662 0l.757-.757v1.608c0 .284.19.473.473.473.284 0 .473-.189.473-.473V18.19l.757.757c.094.095.189.19.378.19.473 0 .662-.568.379-.852l-.852-.852c-.378-.378-.662-.946-.662-1.513 0-.568.284-1.04.757-1.325l.094-.094a1.452 1.452 0 011.514 0c.473.283.851.756.946 1.23l.284 1.23c.094.189.284.378.473.378a.515.515 0 00.473-.663l-.284-1.04 1.324.757c.284.094.568.094.663-.19.378-.283.378-.567.094-.756l-1.324-.757 1.04-.284c.284-.095.473-.378.379-.662-.095-.284-.379-.473-.568-.379l-1.135.284a1.907 1.907 0 01-1.608-.189 1.51 1.51 0 01-.757-1.324v-.19c0-.567.284-1.04.757-1.324a1.907 1.907 0 011.608-.19c1.324.38 1.23.38 1.324.38.19 0 .379-.19.473-.38.095-.283-.094-.567-.378-.661l-1.04-.284 1.23-.757c.283-.095.283-.473.188-.662-.094-.284-.473-.284-.662-.19l-1.324.757.284-1.04c.094-.284-.095-.568-.379-.662-.284-.095-.567.094-.567.378l-.284 1.23c-.095.567-.473.946-.946 1.23a1.452 1.452 0 01-1.514 0l-.094-.095a1.51 1.51 0 01-.757-1.324c0-.568.189-1.136.662-1.514l.851-.851c.19-.19.19-.473 0-.757a.457.457 0 00-.662 0l-.757.757V4.473c0-.284-.189-.473-.473-.473zm.473 6.717c.568.189.852.756.852 1.419 0 .567-.284 1.135-.852 1.419a1.81 1.81 0 01-1.702 0c-.434-.26-.788-.76-.844-1.278l-.008-.141c0-.568.284-1.136.852-1.42a1.81 1.81 0 011.702 0z" fill="url(#snowswap_svg__a)" fill-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">SnowSwap</div>
+                                    </div>
+                                </a>
+                                <a href="https://bandprotocol.com" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg viewBox="0 0 32 32" alt="Band Protocol" class="w-full h-full " title="Band Protocol">
+                                                    <path d="M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 2.4L7.3 7.3v17.4l8.7 5 8.6-5.1V16l-8.3-5-2.8 1.4 8.3 4.9.1 5.9-5.9 3.3-6-3.4V8.7l6-3.3 2.8 1.5v4.7l2.8 1.6v-8L16 2.4zM13.5 13v7.2l6.2-3.5-2.1-1.3-1.9 1v-2.1L13.5 13z" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">Band Protocol</div>
+                                    </div>
+                                </a>
+                                <a href="https://near.org" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg viewBox="0 0 144 145" alt="NEAR Protocol" class="w-full h-full " title="NEAR Protocol">
+                                                    <path d="M115.58 7.81L85.48 52.5a3.2 3.2 0 004.75 4.2L119.86 31a1.2 1.2 0 012 .91v80.46a1.2 1.2 0 01-2.12.77L30.18 5.93A15.346 15.346 0 0018.47.5h-3.13C6.868.5 0 7.368 0 15.84v113.32c0 8.472 6.868 15.34 15.34 15.34a15.353 15.353 0 0013.08-7.31l30.1-44.69a3.2 3.2 0 00-4.75-4.2L24.14 114a1.2 1.2 0 01-2-.91V32.61a1.2 1.2 0 012.12-.77l89.55 107.23a15.346 15.346 0 0011.71 5.43h3.13A15.34 15.34 0 00144 129.16V15.84C144 7.368 137.132.5 128.66.5a15.353 15.353 0 00-13.08 7.31z" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">NEAR Protocol</div>
+                                    </div>
+                                </a>
+                                <a href="https://definer.org" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg id="definer_svg__prefix__prefix__Layer_1" data-name="Layer 1" viewBox="0 0 1024 1024" alt="DeFiner" class="w-full h-full " title="DeFiner">
+                                                    <defs>
+                                                        <style>
+                                                            .definer_svg__prefix__prefix__cls-1 {
+                                                                fill: currentColor
+                                                            }
+                                                        </style>
+                                                    </defs>
+                                                    <path class="definer_svg__prefix__prefix__cls-1" d="M406.64 778.18c0-54.65.81-109.3-.43-163.95a43.24 43.24 0 0118.92-39.79c33.3-25.62 64.11-54.38 96.06-81.73 21-18 42.76-35.2 62.71-54.44a10.8 10.8 0 0112.59-2.43c22.17 9.19 45 16.48 67.84 23.67a13.36 13.36 0 0110.33 9.49c1.19 5.4-2.92 8.11-6.43 11.24q-39.42 34.55-78.55 69.3c-26.76 23.73-53.52 47.57-80.44 71.2a12.9 12.9 0 00-5.4 10.81c.32 13.35 0 26.65 0 39.95 0 2.38-1.52 5.89 1.46 7s4.48-2 6.32-3.68c22.44-19 44.82-38.21 67.2-57.35 10.48-9 21-18 31.46-27a12.36 12.36 0 0114.27-2.47c21.62 8.76 43.24 17 64.87 25.84 10.81 4.43 11.51 11.78 2.65 19.46q-62.72 55-125.63 109.84c-18.92 16.22-37.84 33.3-56.6 49.68a13.15 13.15 0 00-4.92 11.18c0 42.82.38 85.63 0 128.44 0 8.33 2.81 9.25 9.84 9.19a425.57 425.57 0 00396-281.1c80.76-221-29.3-466.19-249.31-550.52C454.1 30.78 222.9 124.74 126.89 328.53c-101.32 215.53-8.75 472.38 206.78 573.71q8.82 4.15 17.83 7.9a227.57 227.57 0 0021.9 8.16c5.73 1.73 8.65 4.11 8 10.81a140.51 140.51 0 000 24.27c.59 7.25-1.41 8-7.89 5.9A442.28 442.28 0 01233 885.92c-127.31-100.82-189.21-233.1-183.8-395 7.19-214.12 162.44-395.54 372-438.3 192-39.14 389 49.89 489.28 221.36 144.82 247 37 565.88-228.07 673.24a454.42 454.42 0 01-266.5 23.24c-7.46-1.51-9.63-5-9.63-12.43.52-59.89.36-119.79.36-179.85z"></path>
+                                                    <path class="definer_svg__prefix__prefix__cls-1" d="M403.78 340.32V143.39c0-12.17 2.7-15.19 15-16.22a493 493 0 0169.13-3.73c43.25 2.21 85.9 9.3 124.72 29C670 181.6 705.74 228.53 715 292.69c6.81 47.3-.65 93.79-16.22 138.82a16.2 16.2 0 01-20.58 10.11c-.2-.06-.41-.14-.61-.22q-30.81-10-61.51-20.54c-11.68-4-15.19-12.05-10.82-23.94a199.94 199.94 0 0010.82-95.25c-4.17-32.06-24.22-52.33-53.52-63.25-17-6.27-34.22-12.38-53-11.41-6.43.33-8.22 2.06-8.22 8.49.27 75.68 0 151.36.38 227.31a25.73 25.73 0 01-9.62 21.62c-23.79 21-47.09 42.55-70.71 63.74-3.19 2.86-6.27 7.62-11.84 4.65s-5.78-8.87-5.78-14.38z"></path>
+                                                    <path fill="none" d="M0 0h1024v1024H0z"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">DeFiner</div>
+                                    </div>
+                                </a>
+                                <a href="https://token.im" target="_blank" rel="noreferrer" class="!no-underline group relative rounded-xl">
+                                    <div class="p-4 pb-10 transition md:p-8 md:pb-12 md:px-10 bg-white text-gray-800 dark:bg-gray-900 dark:text-white rounded-xl">
+                                        <div class="transition transform aspect-w-3 aspect-h-1 md:group-hover:opacity-0 md:group-hover:translate-y-5">
+                                            <div class="absolute w-full h-full transform -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2 -mt-1 max-h-12 max-w-24" style="--tw-scale-x:1;--tw-scale-y:1">
+                                                <svg viewBox="0 0 27 20" alt="imToken" class="w-full h-full " title="imToken">
+                                                    <path d="M25.666 8.308c-1.395 6.356-6.422 9.938-11.312 10.903a13.267 13.267 0 01-5.359-.042c-3.93-.835-7.132-3.496-7.877-7.346-.886-4.564 1.861-6.885 4.144-7.3 2.385-.453 4.527.93 4.918 2.849.333 1.819-.76 2.794-1.595 2.946-.658.13-1.51-.183-1.679-.981-.132-.714.146-.821-.023-1.562a1.465 1.465 0 00-.384-.795c-.473-.514-1.291-.455-1.772-.272-.537.195-1.782.929-1.488 3.204.063.502.247.974.476 1.38.124.212.266.414.446.589.067.101.151.183.265.275 1.019.962 2.607 1.423 4.416 1.079.548-.092 1.085-.295 1.556-.507 2.227-1.056 3.551-3.355 3.398-6.153a1.033 1.033 0 01.068-.503c.035-.075.053-.122.099-.216.082-.122.136-.225.236-.366.073-.076.174-.198.256-.302.925-1.037 3.712-3.217 7.057-4.132h.019a10.332 10.332 0 011.818-.381 11.04 11.04 0 011.916-.009.208.208 0 01.122.035c.167-.039.29.098.348.274.061.343.102.697.139 1.049.246 2.35.202 4.435-.208 6.284" fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="absolute left-0 w-full text-sm font-medium leading-tight text-center text-gray-500 group-hover:text-gray-800 dark:text-gray-400 dark:group-hover:text-white transition transform translate-y-6 md:translate-y-2 lg:translate-y-3 top-1/2 md:mt-3 md:text-base md:group-hover:-translate-y-full">imToken</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="relative z-10 pb-12 pt-20 md:pt-40 mt-20 md:mt-40 dark:mt-0 md:dark:mt-0 bg-black text-white dark">
+                            <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                                <div class="max-w-2xl md:text-center mx-auto">
+                                    <h2 class="text-4xl lg:text-5xl font-bold">The Aurora Network</h2>
+                                    <div class="mt-4">
+                                        <p class="text-2xl leading-normal font-semibold text-gray-900 dark:text-gray-100 text-opacity-60 dark:text-opacity-80">Our network is currently in limited availability as we work towards general availability. Depending on your app demands, you may already deploy on Aurora.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <section class="bg-black text-white dark pb-20 md:pb-40 dark:pb-0">
+                            <div class="relative z-10">
+                                <div class="relative z-10">
+                                    <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto md:pt-12">
+                                        <div class="p-52 items-center justify-center relative hidden md:flex">
+                                            <div class="absolute inset-0 animate-spin-slow">
+                                                <div class="absolute z-10 w-48 rounded-2xl border-4 bg-black p-1 animate-reverse-spin-slow top-52 left-20 border-primary">
+                                                    <div class="bg-gray-900 h-20 flex flex-col items-center justify-center rounded-lg">
+                                                        <span class="font-bold text-lg">Bridge</span>
+                                                        <span class="text-sm font-medium text-primary">Operational</span>
+                                                    </div>
+                                                </div>
+                                                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-1/4 h-1/4 z-0 absolute left-1/2 top-1/2 origin-top-left stroke-current rotate-[-200deg] text-primary">
+                                                    <path fill="none" vector-effect="non-scaling-stroke" stroke-width="4" d="M0 0 C 10 0 75 -10 100 100"></path>
+                                                </svg>
+                                                <div class="absolute z-10 w-48 rounded-2xl border-4 bg-black p-1 animate-reverse-spin-slow top-0 left-1/2 -mx-16 border-primary">
+                                                    <div class="bg-gray-900 h-20 flex flex-col items-center justify-center rounded-lg">
+                                                        <span class="font-bold text-lg">Block Explorer</span>
+                                                        <span class="text-sm font-medium text-primary">Operational</span>
+                                                    </div>
+                                                </div>
+                                                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-1/4 h-1/4 z-0 absolute left-1/2 top-1/2 origin-top-left stroke-current rotate-[-110deg] text-primary">
+                                                    <path fill="none" vector-effect="non-scaling-stroke" stroke-width="4" d="M0 0 C 10 0 75 -10 100 100"></path>
+                                                </svg>
+                                                <div class="absolute z-10 w-48 rounded-2xl border-4 bg-black p-1 animate-reverse-spin-slow top-64 right-20 border-primary">
+                                                    <div class="bg-gray-900 h-20 flex flex-col items-center justify-center rounded-lg">
+                                                        <span class="font-bold text-lg">Data Index</span>
+                                                        <span class="text-sm font-medium text-primary">Operational</span>
+                                                    </div>
+                                                </div>
+                                                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-1/4 h-1/4 z-0 absolute left-1/2 top-1/2 origin-top-left stroke-current rotate-[-35deg] text-primary">
+                                                    <path fill="none" vector-effect="non-scaling-stroke" stroke-width="4" d="M0 0 C 10 0 75 -10 100 100"></path>
+                                                </svg>
+                                                <div class="absolute z-10 w-48 rounded-2xl border-4 bg-black p-1 animate-reverse-spin-slow bottom-0 right-48 border-primary">
+                                                    <div class="bg-gray-900 h-20 flex flex-col items-center justify-center rounded-lg">
+                                                        <span class="font-bold text-lg">AMM Exchange</span>
+                                                        <span class="text-sm font-medium text-primary">Operational</span>
+                                                    </div>
+                                                </div>
+                                                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-1/4 h-1/4 z-0 absolute left-1/2 top-1/2 origin-top-left stroke-current rotate-[20deg] text-primary">
+                                                    <path fill="none" vector-effect="non-scaling-stroke" stroke-width="4" d="M0 0 C 10 0 75 -10 100 100"></path>
+                                                </svg>
+                                                <div class="absolute z-10 w-48 rounded-2xl border-4 bg-black p-1 animate-reverse-spin-slow bottom-8 left-40 border-primary">
+                                                    <div class="bg-gray-900 h-20 flex flex-col items-center justify-center rounded-lg">
+                                                        <span class="font-bold text-lg">Price Oracle</span>
+                                                        <span class="text-sm font-medium text-primary">Operational</span>
+                                                    </div>
+                                                </div>
+                                                <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="w-1/4 h-1/4 z-0 absolute left-1/2 top-1/2 origin-top-left stroke-current rotate-90 text-primary">
+                                                    <path fill="none" vector-effect="non-scaling-stroke" stroke-width="4" d="M0 0 C 10 0 75 -10 100 100"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="flex-shrink-0">
+                                                <svg width="0" height="0">
+                                                    <defs>
+                                                        <clipPath id="auroraShape" clipPathUnits="objectBoundingBox">
+                                                            <path d="M0.5,0 C0.428990232,0 0.36406921,0.0401021832 0.332298914,0.103611112 L0.0198124192,0.728611112 C-0.00926527399,0.786737518 -0.0061683272,0.85577717 0.0279969092,0.91106641 C0.0621621455,0.96635565 0.122521974,1 0.187513505,1 L0.812486495,1 C0.877478026,1 0.937837854,0.96635565 0.972003091,0.91106641 C1.00616833,0.85577717 1.00926527,0.786737518 0.980187581,0.728611112 L0.667701086,0.103611112 C0.63593079,0.0401021832 0.571009768,0 0.5,0 Z"></path>
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                                <div class="w-24 h-24 md:w-52 md:h-52 relative flex items-center justify-center overflow-hidden bg-primary" style="clip-path:url(#auroraShape)">
+                                                    <div class="text-3xl leading-tight font-bold text-white relative z-10 px-10 pt-6 text-center">Aurora EVM</div>
+                                                    <div class="absolute z-0 w-[175%] h-[175%] overflow-hidden transform animate-blob">
+                                                        <div class="animate-blob absolute z-10 w-full h-full rounded-full filter blur-xl bg-primary top-0 left-0 md:-top-40 md:-left-16"></div>
+                                                        <div class="animate-blob absolute left-20 z-20 w-full h-full rounded-full top-56 filter blur-xl bg-accent1"></div>
+                                                        <div class="animate-blob absolute z-30 w-full h-full rounded-full filter blur-xl bg-accent2 -top-12 left-48"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="md:hidden space-y-2">
+                                            <div class="rounded-xl border-2 bg-black p-1 border-primary">
+                                                <div class="flex items-center justify-between bg-gray-900 rounded-lg p-3 pl-4">
+                                                    <div class="font-bold text-lg">Bridge</div>
+                                                    <div class="text-xs rounded tracking-wider font-bold uppercase px-2 py-1  bg-primary text-black">Operational</div>
+                                                </div>
+                                            </div>
+                                            <div class="rounded-xl border-2 bg-black p-1 border-primary">
+                                                <div class="flex items-center justify-between bg-gray-900 rounded-lg p-3 pl-4">
+                                                    <div class="font-bold text-lg">Block Explorer</div>
+                                                    <div class="text-xs rounded tracking-wider font-bold uppercase px-2 py-1  bg-primary text-black">Operational</div>
+                                                </div>
+                                            </div>
+                                            <div class="rounded-xl border-2 bg-black p-1 border-primary">
+                                                <div class="flex items-center justify-between bg-gray-900 rounded-lg p-3 pl-4">
+                                                    <div class="font-bold text-lg">Data Index</div>
+                                                    <div class="text-xs rounded tracking-wider font-bold uppercase px-2 py-1  bg-primary text-black">Operational</div>
+                                                </div>
+                                            </div>
+                                            <div class="rounded-xl border-2 bg-black p-1 border-primary">
+                                                <div class="flex items-center justify-between bg-gray-900 rounded-lg p-3 pl-4">
+                                                    <div class="font-bold text-lg">AMM Exchange</div>
+                                                    <div class="text-xs rounded tracking-wider font-bold uppercase px-2 py-1  bg-primary text-black">Operational</div>
+                                                </div>
+                                            </div>
+                                            <div class="rounded-xl border-2 bg-black p-1 border-primary">
+                                                <div class="flex items-center justify-between bg-gray-900 rounded-lg p-3 pl-4">
+                                                    <div class="font-bold text-lg">Price Oracle</div>
+                                                    <div class="text-xs rounded tracking-wider font-bold uppercase px-2 py-1  bg-primary text-black">Operational</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="absolute inset-0"></div>
+                            </div>
+                        </section>
+                        <div class="relative z-10 pb-12 pt-20 md:pt-40">
+                            <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                                <div class="max-w-2xl">
+                                    <h2 class="text-4xl lg:text-5xl font-bold">Weekly Alpha Leaks</h2>
+                                    <div class="mt-4">
+                                        <p class="text-2xl leading-normal font-semibold text-gray-900 dark:text-gray-100 text-opacity-60 dark:text-opacity-80">At Aurora, we have an ethos of relentless and transparent execution. In that regard, you’ll find below the links to our weekly live-streamed Alpha Leak session, and associated update posts.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div></div>
+                        <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto z-10 relative">
+                            <div class="mt-12 space-y-4 md:space-y-0 md:grid md:grid-cols-3 md:gap-4">
+                                <div class="bg-white dark:bg-gray-900 md:col-span-2 rounded-xl md:grid md:grid-cols-2">
+                                    <div class="p-8">
+                                        <div class="w-16 h-16 rounded-full bg-accent2 text-white flex items-center justify-center">
+                                            <svg class="w-8 h-8" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M467 242H45c-24.814 0-45 20.186-45 45v180c0 24.814 20.186 45 45 45h422c24.814 0 45-20.186 45-45V287c0-24.814-20.185-45-45-45zM136 452H76c-8.291 0-15-6.709-15-15V317c0-8.291 6.709-15 15-15s15 6.709 15 15v105h45c8.291 0 15 6.709 15 15s-6.709 15-15 15zm75-15c0 8.291-6.709 15-15 15s-15-6.709-15-15V317c0-8.291 6.709-15 15-15s15 6.709 15 15zm119.546-116.367l-30 120C298.876 447.313 292.885 452 286 452s-12.876-4.688-14.546-11.367l-30-120c-2.021-8.027 2.871-16.172 10.913-18.179 8.013-2.08 16.172 2.871 18.179 10.913L286 375.155l15.454-61.787c1.992-8.042 10.137-13.008 18.179-10.913 8.042 2.006 12.935 10.151 10.913 18.178zM436 362c8.291 0 15 6.709 15 15s-6.709 15-15 15h-45v30h45c8.291 0 15 6.709 15 15s-6.709 15-15 15h-60c-8.291 0-15-6.709-15-15V317c0-8.291 6.709-15 15-15h60c8.291 0 15 6.709 15 15s-6.709 15-15 15h-45v30zM123.988 204.009c-43.77-58.301-43.77-139.717 0-198.018 4.966-6.606 14.385-7.969 21.006-2.988s7.954 14.385 2.988 21.006c-35.815 47.681-35.815 114.302 0 161.982 4.966 6.621 3.633 16.025-2.988 21.006-6.593 4.946-16.016 3.664-21.006-2.988zM367.006 206.997c-6.621-4.98-7.954-14.385-2.988-21.006 35.815-47.681 35.815-114.302 0-161.982-4.966-6.621-3.633-16.025 2.988-21.006 6.621-4.966 16.055-3.618 21.006 2.988 43.77 58.301 43.77 139.717 0 198.018-4.982 6.642-14.4 7.942-21.006 2.988z" fill="currentColor"></path>
+                                                <path d="M177.734 175.005c-35.742-39.902-35.742-100.107 0-140.01 5.537-6.167 15.059-6.665 21.182-1.172 6.167 5.522 6.694 15.015 1.172 21.182-25.518 28.506-25.518 71.484 0 99.99 5.522 6.167 4.995 15.659-1.172 21.182-6.146 5.515-15.654 5.013-21.182-1.172zM313.085 176.177c-6.167-5.522-6.694-15.015-1.172-21.182 25.518-28.506 25.518-71.484 0-99.99-5.522-6.167-4.995-15.659 1.172-21.182 6.152-5.508 15.659-5.01 21.182 1.172 35.742 39.902 35.742 100.107 0 140.01-5.526 6.183-15.035 6.688-21.182 1.172zM256 150c-24.814 0-45-20.186-45-45s20.186-45 45-45 45 20.186 45 45-20.185 45-45 45z" fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="mt-4">
+                                            <p class="text-lg md:text-base font-semibold">Tune in to our Alpha Leak every Friday at 9am EST on YouTube.</p>
+                                            <div class="mt-4">
+                                                <a class="relative items-center justify-center pb-0.5 white-space-nowrap whitespace-nowrap transition hover:scale-103 active:scale-95 active:transform focus:outline-none font-semibold flex-1 flex w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 h-9 rounded-lg px-4" target="_blank" href="https://www.youtube.com/c/auroraisnear">Watch now</a>
+                                            </div>
+                                            <div class="mt-2">
+                                                <span class="inline-block text-gray-900 dark:text-white undefined text-opacity-60 dark:text-opacity-60 text-sm">Going live in 
+                                                <!-- -->
+                                                0 days, 
+                                                <!-- -->
+                                                .</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-8 border-t md:border-t-0 md:border-l border-gray-100 dark:border-black">
+                                        <span class="inline-block text-gray-900 dark:text-white font-semibold leading-tight">Past updates:</span>
+                                        <ul class="mt-2 grid grid-cols-2 gap-1"></ul>
+                                        <a class="mt-1 bg-gray-100 dark:bg-gray-700 rounded-md block p-2 text-center text-sm font-semibold text-black dark:text-white dark:text-opacity-75 text-opacity-75 hover:text-opacity-100 dark:hover:text-opacity-100" href="/blog/category/updates">All updates</a>
+                                    </div>
+                                </div>
+                                <div class="bg-white dark:bg-gray-900 rounded-xl p-8">
+                                    <div class="w-16 h-16 rounded-full bg-accent1 text-white flex items-center justify-center">
+                                        <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="M339.392 258.624L512 367.744V144.896zM0 144.896v222.848l172.608-109.12zM480 80H32C16.032 80 3.36 91.904.96 107.232L256 275.264l255.04-168.032C508.64 91.904 495.968 80 480 80zM310.08 277.952l-45.28 29.824a15.983 15.983 0 01-8.8 2.624c-3.072 0-6.112-.864-8.8-2.624l-45.28-29.856L1.024 404.992C3.488 420.192 16.096 432 32 432h448c15.904 0 28.512-11.808 30.976-27.008L310.08 277.952z" fill="currentColor"></path>
+                                        </svg>
+                                    </div>
+                                    <div class="mt-4">
+                                        <p class="text-lg md:text-base font-semibold">Get Aurora updates and news delivered to your inbox.</p>
+                                        <div class="mt-4">
+                                            <form novalidate="" class="space-y-1.5">
+                                                <div class="h-10 w-full flex bg-gray-200 dark:bg-gray-600 rounded-lg">
+                                                    <input type="email" placeholder="Your email address" required="" value="" class="flex-1 px-3 font-medium placeholder-gray-400 bg-transparent border-none max-w-80 focus:outline-none focus:ring-0"/>
+                                                </div>
+                                                <button class="relative items-center justify-center pb-0.5 white-space-nowrap whitespace-nowrap transition hover:scale-103 active:scale-95 active:transform focus:outline-none font-semibold flex-1 flex w-full bg-gray-900 text-white dark:bg-white dark:text-gray-900 h-9 rounded-lg px-4">Subscribe now</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative z-10 pb-12 pt-20 md:pt-40">
+                            <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                                <div class="max-w-2xl md:text-center mx-auto">
+                                    <h2 class="text-4xl lg:text-5xl font-bold">How can Aurora help you?</h2>
+                                    <div class="mt-4">
+                                        <p class="text-2xl leading-normal font-semibold text-gray-900 dark:text-gray-100 text-opacity-60 dark:text-opacity-80">Get started today, capturing the first-mover advantage on Aurora! Talk to Anton, our partners lead, about your use case.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="relative z-0 pb-32">
+                            <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto relative z-10 text-center">
+                                <button class="relative items-center justify-center pb-0.5 white-space-nowrap whitespace-nowrap transition hover:scale-103 active:scale-95 active:transform focus:outline-none flex-shrink-0 inline-flex text-white bg-accent2 dark:bg-primary h-14 text-xl font-bold rounded-xl px-6">Contact Anton</button>
+                                <ul class="mt-8 font-semibold text-lg text-center space-y-2">
+                                    <li>
+                                        <a class="opacity-75 hover:opacity-100" href="https://doc.aurora.dev" target="_blank" rel="noreferrer">Read the docs</a>
+                                    </li>
+                                    <li>
+                                        <a class="opacity-75 hover:opacity-100" href="https://github.com/aurora-is-near" target="_blank" rel="noreferrer">Find us on GitHub</a>
+                                    </li>
+                                    <li>
+                                        <a class="opacity-75 hover:opacity-100" href="https://discord.gg/dEFJBz8HQV" target="_blank" rel="noreferrer">Get support in Discord</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="absolute left-0 bottom-0 overflow-hidden h-[1188px] z-0 opacity-50 hidden md:block">
+                                <svg width="1269" height="1188" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-0 md:left-1/2 md:-translate-x-1/2 -ml-24 md:ml-24 hidden dark:block rotate-[4deg]">
+                                    <defs>
+                                        <linearGradient x1="31.175%" y1="76.965%" x2="100%" y2="81.228%" id="prefix__a">
+                                            <stop stop-color="#031517" offset="0%"></stop>
+                                            <stop stop-color="#222C30" offset="100%"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M734.494 201.836c63.724-.18 122.03 31.849 150.369 82.604l472.857 840.983c26.081 46.348 23.31 101.402-7.326 145.492-30.634 44.09-84.761 70.921-143.042 70.921H261.637c-58.282 0-112.409-26.831-143.043-70.921-30.635-44.09-33.407-99.144-7.326-145.492L584.125 284.44c28.34-50.755 86.645-82.784 150.37-82.604" fill="url(#prefix__a)" transform="rotate(115 734.494 771.836)"></path>
+                                </svg>
+                                <svg width="1269" height="1188" xmlns="http://www.w3.org/2000/svg" class="absolute bottom-0 left-1/2 -translate-x-1/2 ml-24 dark:hidden rotate-[4deg]">
+                                    <defs>
+                                        <linearGradient x1="31.175%" y1="76.965%" x2="100%" y2="81.228%" id="prefix__b">
+                                            <stop stop-color="#FFF" stop-opacity="0" offset="0%"></stop>
+                                            <stop stop-color="#FFF" offset="100%"></stop>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="M734.494 201.836c63.724-.18 122.03 31.849 150.369 82.604l472.857 840.983c26.081 46.348 23.31 101.402-7.326 145.492-30.634 44.09-84.761 70.921-143.042 70.921H261.637c-58.282 0-112.409-26.831-143.043-70.921-30.635-44.09-33.407-99.144-7.326-145.492L584.125 284.44c28.34-50.755 86.645-82.784 150.37-82.604" fill="url(#prefix__b)" transform="rotate(115 734.494 771.836)"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <footer class="w-full py-16 md:py-20 bg-black text-white dark:bg-gray-900 relative z-10">
+                    <div class="container w-full max-w-5xl px-5 md:px-10 mx-auto undefined">
+                        <div class="space-y-5 md:items-center md:justify-between md:flex md:space-y-0">
+                            <div class="flex-1">
+                                <div class="text-2xl font-bold -mt-1.5">Subscribe to our newsletter</div>
+                                <div class="w-full mx-auto mt-1 leading-tight md:max-w-none text-white text-opacity-75">The latest news, articles, and resources, sent to your inbox.</div>
+                            </div>
+                            <div class="flex-1">
+                                <form novalidate="" class="flex md:justify-end w-full">
+                                    <div class="h-12 w-full max-w-96 flex bg-gray-600 rounded-lg">
+                                        <input type="email" name="email" placeholder="Your email" value="" class="flex-1 px-4 placeholder-gray-400 bg-transparent border-none max-w-80 focus:outline-none focus:ring-0"/>
+                                        <input type="submit" value="Subscribe" name="subscribe" class="flex-shrink-0 m-1.5 px-3 pb-0.5 font-semibold rounded-md text-black bg-white disabled:opacity-50"/>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="md:space-y-0 md:grid md:grid-cols-4 md:gap-5 leading-relaxed md:pt-10 mt-10 md:border-t md:border-gray-700">
+                            <div class="">
+                                <button class="md:hidden flex justify-between items-center w-full text-left text-lg font-medium border-t border-gray-700 py-4">
+                                    <span>Company</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <div class="hidden md:block text-primary uppercase text-xs tracking-wider font-semibold">Company</div>
+                                <div class="mb-6 md:mb-0 md:mt-2 md:block hidden">
+                                    <ul>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/about">About</a>
+                                        </li>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/dao">DAO</a>
+                                        </li>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/team">Team</a>
+                                        </li>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/careers">Careers</a>
+                                        </li>
+                                        <li>
+                                            <button class="opacity-75 hover:opacity-100">Contact</button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="md:hidden flex justify-between items-center w-full text-left text-lg font-medium border-t border-gray-700 py-4">
+                                    <span>Developers</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <div class="hidden md:block text-primary uppercase text-xs tracking-wider font-semibold">Developers</div>
+                                <div class="mb-6 md:mb-0 md:mt-2 md:block hidden">
+                                    <ul>
+                                        <li>
+                                            <a href="https://docs.aurora.dev" target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100">Documentation</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://explorer.aurora.dev/" target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100">Block Explorer</a>
+                                        </li>
+                                        <li>
+                                            <a href="https://testnet.rainbowbridge.app" class="opacity-75 hover:opacity-100">Testnet Bridge</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100" href="https://github.com/aurora-is-near">GitHub</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100" href="https://t.me/auroraisneardev">Telegram Dev</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="md:hidden flex justify-between items-center w-full text-left text-lg font-medium border-t border-gray-700 py-4">
+                                    <span>Resources</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <div class="hidden md:block text-primary uppercase text-xs tracking-wider font-semibold">Resources</div>
+                                <div class="mb-6 md:mb-0 md:mt-2 md:block hidden">
+                                    <ul>
+                                        <li>
+                                            <a href="https://rainbowbridge.app" class="opacity-75 hover:opacity-100">Bridge</a>
+                                        </li>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/tokens">Official Token List</a>
+                                        </li>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/blog">News &amp;Blog</a>
+                                        </li>
+                                        <li>
+                                            <a class="opacity-75 hover:opacity-100" href="/blog/category/updates">Weekly Updates</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" class="opacity-75 hover:opacity-100" href="https://github.com/aurora-is-near/aurora-press-kit/archive/refs/heads/master.zip">Press Kit</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="">
+                                <button class="md:hidden flex justify-between items-center w-full text-left text-lg font-medium border-t border-gray-700 py-4">
+                                    <span>Stay in touch</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+                                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                                    </svg>
+                                </button>
+                                <div class="hidden md:block text-primary uppercase text-xs tracking-wider font-semibold">Stay in touch</div>
+                                <div class="mb-6 md:mb-0 md:mt-2 md:block hidden">
+                                    <ul>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100" href="https://discord.gg/dEFJBz8HQV">Discord</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100" href="https://t.me/auroraisnear">Telegram Official</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100" href="https://t.me/AuroraSupport_bot">Telegram Support</a>
+                                        </li>
+                                        <li>
+                                            <a target="_blank" rel="noreferrer" class="opacity-75 hover:opacity-100" href="https://twitter.com/auroraisnear">Twitter</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex flex-col items-center justify-between pt-12 md:pt-5 md:mt-10 space-y-5 border-t border-gray-700 md:space-y-0 md:space-x-10 md:flex-row">
+                            <div class="text-white text-opacity-75">
+                                © 
+                                <!-- -->
+                                2022
+                                <!-- -->
+                                Aurora Labs
+                                <!-- -->
+                                / <a class="hover:text-white" href="/privacy">Privacy</a>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <a href="https://discord.gg/dEFJBz8HQV" target="_blank" rel="noreferrer">
+                                    <svg viewBox="0 0 448 512" width="28" height="28" class="transition opacity-75 fill-current dark:text-white hover:opacity-100">
+                                        <path d="M297.216 243.2c0 15.616-11.52 28.416-26.112 28.416-14.336 0-26.112-12.8-26.112-28.416s11.52-28.416 26.112-28.416c14.592 0 26.112 12.8 26.112 28.416zm-119.552-28.416c-14.592 0-26.112 12.8-26.112 28.416s11.776 28.416 26.112 28.416c14.592 0 26.112-12.8 26.112-28.416.256-15.616-11.52-28.416-26.112-28.416zM448 52.736V512c-64.494-56.994-43.868-38.128-118.784-107.776l13.568 47.36H52.48C23.552 451.584 0 428.032 0 398.848V52.736C0 23.552 23.552 0 52.48 0h343.04C424.448 0 448 23.552 448 52.736zm-72.96 242.688c0-82.432-36.864-149.248-36.864-149.248-36.864-27.648-71.936-26.88-71.936-26.88l-3.584 4.096c43.52 13.312 63.744 32.512 63.744 32.512-60.811-33.329-132.244-33.335-191.232-7.424-9.472 4.352-15.104 7.424-15.104 7.424s21.248-20.224 67.328-33.536l-2.56-3.072s-35.072-.768-71.936 26.88c0 0-36.864 66.816-36.864 149.248 0 0 21.504 37.12 78.08 38.912 0 0 9.472-11.52 17.152-21.248-32.512-9.728-44.8-30.208-44.8-30.208 3.766 2.636 9.976 6.053 10.496 6.4 43.21 24.198 104.588 32.126 159.744 8.96 8.96-3.328 18.944-8.192 29.44-15.104 0 0-12.8 20.992-46.336 30.464 7.68 9.728 16.896 20.736 16.896 20.736 56.576-1.792 78.336-38.912 78.336-38.912z" fill="currentColor"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://t.me/auroraisnear" target="_blank" rel="noreferrer">
+                                    <svg viewBox="0 0 496 512" width="28" height="28" class="transition opacity-75 fill-current dark:text-white hover:opacity-100">
+                                        <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/auroraisnear" target="_blank" rel="noreferrer">
+                                    <svg fill="currentColor" viewBox="0 0 512 512" width="28" height="28" class="transition opacity-75 fill-current dark:text-white hover:opacity-100">
+                                        <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://www.youtube.com/channel/UC5inYyvUO10iL65hBPFtpvg" target="_blank" rel="noreferrer">
+                                    <svg viewBox="0 0 576 512" width="28" height="28" class="transition opacity-75 fill-current dark:text-white hover:opacity-100">
+                                        <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/aurora-is-near" target="_blank" rel="noreferrer">
+                                    <svg viewBox="0 0 36 36" fill="currentColor" width="28" height="28" class="transition opacity-75 fill-current dark:text-white hover:opacity-100">
+                                        <path d="M18 0C8.06 0 0 8.058 0 18c0 7.953 5.157 14.7 12.31 17.08.9.165 1.23-.39 1.23-.868 0-.427-.017-1.56-.025-3.06-5.007 1.086-6.064-2.415-6.064-2.415-.818-2.078-1.999-2.632-1.999-2.632-1.633-1.118.125-1.094.125-1.094 1.806.127 2.757 1.855 2.757 1.855 1.605 2.75 4.213 1.956 5.238 1.495.163-1.163.628-1.956 1.143-2.406-3.997-.454-8.199-1.999-8.199-8.896 0-1.966.701-3.572 1.852-4.83-.185-.456-.803-2.285.177-4.764 0 0 1.511-.484 4.95 1.845 1.436-.4 2.975-.599 4.506-.606 1.528.007 3.068.207 4.507.606 3.436-2.329 4.944-1.845 4.944-1.845.983 2.479.365 4.308.179 4.764 1.154 1.258 1.85 2.864 1.85 4.83 0 6.915-4.208 8.436-8.218 8.882.646.556 1.222 1.654 1.222 3.333 0 2.407-.022 4.348-.022 4.938 0 .482.324 1.041 1.238.866C30.847 32.693 36 25.95 36 18c0-9.942-8.06-18-18-18"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        <script id="__NEXT_DATA__" type="application/json">
+            {"props":{"pageProps":{"preview":false,"page":{"title":"Breathe new life into your apps.","intro":"Aurora is an EVM built on the NEAR Protocol, delivering a turn-key solution for developers to operate their apps on an Ethereum-compatible, high-throughput, scalable and future-safe platform, with low transaction costs for their users.","stat1Title":"Avg Block Time","stat1Value":"~1.00s","stat2Title":"Transaction Finality","stat2Value":"2.00s","stat3Title":"Typical Cost","stat3Value":"$0.00","content":[{"id":"55351949","_modelApiKey":"heading_block","title":"","intro":"Many leading projects are already collaborating with Aurora, exploring the next steps for unlocking these exciting benefits!","alignment":"left","colorScheme":"auto"},{"id":"54783121","_modelApiKey":"partners_block"},{"id":"55351955","_modelApiKey":"heading_block","title":"The Aurora Network","intro":"Our network is currently in limited availability as we work towards general availability. Depending on your app demands, you may already deploy on Aurora.","alignment":"center","colorScheme":"dark"},{"id":"55351584","_modelApiKey":"network_block","network":{"nodes":[{"title":"Bridge","status":"done","statusLabel":"Operational"},{"title":"Block Explorer","status":"done","statusLabel":"Operational"},{"title":"Data Index","status":"done","statusLabel":"Operational"},{"title":"AMM Exchange","status":"done","statusLabel":"Operational"},{"title":"Price Oracle","status":"done","statusLabel":"Operational"}]}},{"id":"55351931","_modelApiKey":"heading_block","title":"Weekly Alpha Leaks","intro":"At Aurora, we have an ethos of relentless and transparent execution. In that regard, you’ll find below the links to our weekly live-streamed Alpha Leak session, and associated update posts.","alignment":"left","colorScheme":"auto"},{"id":"55351523","_modelApiKey":"kanban_block","todos":{"columns":[{"title":"Backlog","titleColor":"text-accent1","items":["Bridging of NFTs","Fast bridge transfers","NEAR Interoperability","Sharding"]},{"title":"In Progress","titleColor":"text-accent2","items":["Support for London Hard Fork","Aurora SDK for developers","Block explorer","API keys","WebSockets RPC"]},{"title":"Done","titleColor":"text-primary","items":["Support for Berlin Hard Fork","Bridging of ETH","Bridging of ERC-20 tokens","Migration to Goerli Testnet"]}]}},{"id":"55351658","_modelApiKey":"updates_block","liveIntro":"Tune in to our Alpha Leak every Friday at 9am EST on YouTube.","newsletterIntro":"Get Aurora updates and news delivered to your inbox."},{"id":"55352073","_modelApiKey":"heading_block","title":"How can Aurora help you?","intro":"Get started today, capturing the first-mover advantage on Aurora! Talk to Anton, our partners lead, about your use case.","alignment":"center","colorScheme":"auto"},{"id":"55352131","_modelApiKey":"cta_block","buttonLabel":"Contact Anton","links":{"links":[{"label":"Read the docs","url":"https://doc.aurora.dev"},{"label":"Find us on GitHub","url":"https://github.com/aurora-is-near"},{"label":"Get support in Discord","url":"https://discord.gg/dEFJBz8HQV"}]}}],"seo":null}},"__N_SSG":true},"page":"/","query":{},"buildId":"fgGhyJVU7aWNd8oyqUQQC","isFallback":false,"gsp":true,"locale":"en","locales":["en","ru","zh"],"defaultLocale":"en","scriptLoader":[]}
+        </script>
+    </body>
+</html>
