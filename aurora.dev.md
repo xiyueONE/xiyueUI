@@ -5,8 +5,7 @@ Aurora is an EVM built on the NEAR Protocol, delivering a turn-key solution for 
 
 Average Block Time
 ~
-1
-sec
+1 sec
 Transaction Finality
 ~2 sec
 Typical Cost
