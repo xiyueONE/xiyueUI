@@ -10,3 +10,9 @@ Full Ethereum compatibility
 
 # three
 High throughput and scalability
+
+# four
+Low transaction costs
+
+#five
+Features, Features, Features
