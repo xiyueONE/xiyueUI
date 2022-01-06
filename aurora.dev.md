@@ -10,5 +10,4 @@ sec
 Transaction Finality
 ~2 sec
 Typical Cost
-~$
-0.00
+~$ 0.00
