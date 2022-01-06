@@ -8,9 +8,7 @@ Average Block Time
 1
 sec
 Transaction Finality
-~
-2
-sec
+~2 sec
 Typical Cost
 ~
 $
