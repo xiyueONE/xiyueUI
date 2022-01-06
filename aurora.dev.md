@@ -28,3 +28,5 @@ imToken
 
 # The Aurora Network
 
+Our network is currently in limited availability as we work towards general availability. Depending on your app demands, you may already deploy on Aurora.
+
