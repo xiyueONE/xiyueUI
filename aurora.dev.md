@@ -65,6 +65,12 @@ Get Aurora updates and news delivered to your inbox.
 Your email address
 Subscribe now
 
+How can Aurora help you?
+Get started today, capturing the first-mover advantage on Aurora! Talk to Anton, our partners lead, about your use case.
 
+Contact Anton
+Read the docs
+Find us on GitHub
+Get support in Discord
 
 
