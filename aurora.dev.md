@@ -16,8 +16,7 @@ Average Block Time
 ~1 sec
 Transaction Finality
 ~2 sec
-Typical Cost
-~$ 0.00
+Typical Cost ~$ 0.00
 
 
 Many leading projects are already collaborating with Aurora, exploring the next steps for unlocking these exciting benefits!
