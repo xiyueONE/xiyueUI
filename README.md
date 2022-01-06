@@ -7,3 +7,6 @@ Aurora is an Ethereum Virtual Machine created by the team at the NEAR Protocol, 
 
 # two
 Full Ethereum compatibility
+
+# three
+High throughput and scalability
