@@ -21,4 +21,4 @@ $ six
 Trustless Bridging
 
 # seven
-te
+ted
