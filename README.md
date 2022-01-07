@@ -21,5 +21,4 @@ $ six
 Trustless Bridging
 
 # seven
-Base currency is ETH
-dd
+a
